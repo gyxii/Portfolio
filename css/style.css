@@ -106,3 +106,11 @@ p {
     background-color: #34ccba;
     border-radius: 5px;
 }
+
+/*home*/
+#home {
+    background: url(../img/main.png) center/cover no-repeat;
+    padding: 150px;
+    text-align: center;
+
+}
