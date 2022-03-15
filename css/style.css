@@ -92,7 +92,7 @@ p {
     background-color: #8FE3D9;
     align-items: center;
     color: #fff;
-    padding: 16px;
+    padding: 5px 15px;
 }
 
 #navbar img {
@@ -136,7 +136,14 @@ p {
     background-color: #34ccba;
     border-radius: 5px;
 }
-
+.navbar__toggle-btn {
+    position: absolute;
+    right: 32px;
+    
+    font-size: 24px;
+    color: #fff;
+    display: none;
+}
 /*home*/
 #home {
     background: url(../img/main.png) center/cover no-repeat;
@@ -434,4 +441,15 @@ p {
 }
 .contact__right {
     margin-top: 15px;
+}
+
+/*반응형*/
+
+@media screen and(max-width:768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+    }
 }
