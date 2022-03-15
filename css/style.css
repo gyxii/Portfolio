@@ -98,7 +98,7 @@ p {
     color: #fff;
     padding: 5px 15px;
     z-index: 100;
- 
+
 }
 
 #navbar img {
@@ -128,7 +128,7 @@ p {
 .navbar__menu {
     display: flex;
 
-  
+
 
 }
 
@@ -140,13 +140,11 @@ p {
 
 }
 
-.navbar__menu__item.active {
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
+
 
 .navbar__menu__item:hover {
     background-color: #34ccba;
+
     border-radius: 5px;
 }
 
@@ -157,7 +155,7 @@ p {
     font-size: 24px;
     color: #fff;
     display: none;
-    
+
 }
 
 /*home*/
@@ -190,6 +188,11 @@ p {
     border: 1px solid #34ccba;
     border-radius: 4px;
 
+}
+
+.home__contact:hover {
+    background-color: #34ccba;
+    transition: all 300ms ease;
 }
 
 /*section*/
@@ -343,7 +346,11 @@ p {
     font-size: var(--font-regular);
     padding: 8px 48px;
     margin-right: 5px;
+    position: relative;
+
 }
+
+.category__btn:hover {}
 
 .category__btn.active,
 .category__btn:hover {
@@ -366,10 +373,10 @@ p {
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    margin-left: 10px;
-    position: relative;
+
+    position: absolute;
     top: -20px;
-    left: 4px;
+    right: 16px;
     opacity: 0;
     transition: all 300ms ease;
 }
@@ -382,10 +389,12 @@ p {
     transition: all 300ms ease-out;
 
 }
+
 .work__projects.anim-out {
     opacity: 0.6;
     transform: scale(0.9) translateY(40px);
 }
+
 .project {
     position: relative;
     width: 280px;
@@ -396,9 +405,11 @@ p {
     justify-content: center;
     align-items: center;
 }
-.project.invisible{
+
+.project.invisible {
     display: none;
 }
+
 .project:hover .project__description {
     opacity: 0.8;
     transform: translateY(0);
@@ -499,6 +510,12 @@ p {
 /*반응형*/
 
 @media screen and (max-width:768px) {
+    #home {
+        padding: 100px 0;
+        padding-bottom: 50px;
+
+    }
+
     .navbar__toggle-btn {
         display: block;
     }
@@ -513,31 +530,53 @@ p {
         flex-direction: column;
         text-align: center;
         width: 100%;
-       display: none;
-     
-    
-       
-    
+        display: none;
+
+
+
+
     }
+
     .navbar__menu.open {
-      
-       display: block;
+
+        display: block;
     }
-   
+
     .about__majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0;
     }
 
     .major {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .skillset {
         flex-direction: column;
     }
 
+    .category__btn {
+        width: 100%;
+        margin: 4px 0;
+
+
+    }
+
     .project {
         flex-grow: 1;
     }
 
+
+    .section {
+        padding: 16px;
+        padding-top: 40px;
+
+    }
+
+    .arrow-up {
+        bottom: 16px;
+        right: 16px;
+
+    }
 }
