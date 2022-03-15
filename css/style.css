@@ -245,12 +245,15 @@ p {
 #skills {
     background-color: #8FE3D9;
 }
+
 .section__container h2 {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .section__container p {
-font-size: 1rem;
+    font-size: 1rem;
 }
+
 .skillset {
     display: flex;
     background-color: rgba(255, 255, 255, 0.5);
@@ -258,9 +261,11 @@ font-size: 1rem;
 
 
 }
+
 .skill {
     margin-bottom: 30px;
 }
+
 .skillset__left {
     flex-basis: 60%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -271,25 +276,132 @@ font-size: 1rem;
     flex-basis: 40%;
     background-color: rgba(255, 255, 255, 0.3);
 }
+
 .skill_description {
     display: flex;
     justify-content: space-between;
-    
+
 }
+
 .skill__bar {
     width: 100%;
     height: 3px;
     background-color: #333;
 }
+
 .skill_value {
     width: 100%;
     height: 3px;
     background-color: #feb546;
 }
+
 .tools {
     padding: 20px;
-    
+
 }
+
 .tools__list li {
     margin-bottom: 12px;
+}
+
+/*work*/
+.work__categories {
+    margin: 40px;
+}
+
+.category__btn {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: var(--font-regular);
+    padding: 8px 48px;
+    margin-right: 5px;
+}
+
+.category__btn.active,
+.category__btn:hover {
+    background-color: #8FE3D9;
+    color: #333;
+
+}
+
+.category__btn.active .category__Count,
+.category__btn:hover .category__Count {
+    opacity: 1;
+    top: 0;
+}
+
+.category__Count {
+    background-color: #34ccba;
+    border-radius: 50%;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -20px;
+    left: 4px;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.project {
+    position: relative;
+    width: 280px;
+    height: 250px;
+    margin: 2px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project:hover .project__description {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+
+.project_img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.project__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 300ms ease;
+    transform: translateY(10px);
+}
+
+.project__description h3 {
+    color: #fff;
+}
+
+.project__description h3::after {
+    content: '';
+    position: relative;
+    left: 50%;
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-left: -12px;
+    margin-top: 8px;
+    background-color: #fff;
 }
