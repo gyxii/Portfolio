@@ -25,8 +25,13 @@ if (link == null) {
 navbarMenu.classList.remove('open');
 
 console.log(event.target.dataset.link);
-
 const scrollTo = document.querySelector(link);
-scrollTo.scrollIntoView();
+scrollTo.scrollIntoView({behavior:'smooth'});
+});
+
+//contact me button
+const homeConractBtn = document.querySelector('.home__contact');
+homeConractBtn.addEventListener('click' , () => {
+ scrollIntoView('#contact')
 });
 
