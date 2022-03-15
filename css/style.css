@@ -244,14 +244,18 @@ p {
 /*skills*/
 #skills {
     background-color: #8FE3D9;
+    
 }
 
 .section__container h2 {
     margin-bottom: 20px;
+ 
+
 }
 
 .section__container p {
     font-size: 1rem;
+ 
 }
 
 .skillset {
@@ -404,4 +408,30 @@ p {
     margin-left: -12px;
     margin-top: 8px;
     background-color: #fff;
+}
+
+/*contact*/
+#contact {
+    background-color: #8FE3D9;
+  
+   
+    
+}
+.contact__tilte,.contact__email,.contact__right {
+    color: #fff;
+}
+.contact__tilte {
+    margin: 32px 0;
+}
+.contact__links {
+    font-size: var(--font-large);
+    margin: 24px 0;
+}
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: #34ccba;
+    transition: all 300ms ease;
+}
+.contact__right {
+    margin-top: 15px;
 }
