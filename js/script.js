@@ -32,6 +32,7 @@ scrollTo.scrollIntoView({behavior:'smooth'});
 //contact me button
 const homeConractBtn = document.querySelector('.home__contact');
 homeConractBtn.addEventListener('click' , () => {
- scrollIntoView('#contact')
+  const scrollTo = document.querySelector('#contact');
+  scrollTo.scrollIntoView({behavior:'smooth'});
 });
 
