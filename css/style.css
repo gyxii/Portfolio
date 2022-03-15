@@ -1,7 +1,7 @@
 /* Global */
 * {
     box-sizing: border-box;
- 
+
 }
 
 
@@ -106,10 +106,12 @@ p {
     margin-right: 15px;
 
 }
+
 #navbar.navbar--dark {
     background-color: #8FE3D9;
     transition: all 300ms ease-in-out;
 }
+
 .navbar__logo {
     font-size: var(--font-regular);
     display: flex;
@@ -372,9 +374,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 1;
+    transition: all 300ms ease-out;
 
 }
-
+.work__projects.anim-out {
+    opacity: 0.6;
+    transform: scale(0.9) translateY(40px);
+}
 .project {
     position: relative;
     width: 280px;
@@ -385,7 +392,9 @@ p {
     justify-content: center;
     align-items: center;
 }
-
+.project.invisible{
+    display: none;
+}
 .project:hover .project__description {
     opacity: 0.8;
     transform: translateY(0);
@@ -461,6 +470,28 @@ p {
     margin-top: 15px;
 }
 
+/*Arrow up*/
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    color: #fff;
+    background-color: #34ccba;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 300ms ease-in;
+    pointer-events: none;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
 /*반응형*/
 
 @media screen and (max-width:768px) {
@@ -487,9 +518,11 @@ p {
     .major {
         margin-bottom: 50px;
     }
+
     .skillset {
         flex-direction: column;
     }
+
     .project {
         flex-grow: 1;
     }

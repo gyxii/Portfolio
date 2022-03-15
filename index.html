@@ -50,10 +50,12 @@
     <!--navbar -->
 
     <section id="home">
-        <img src="img/nav_img.jpg" alt="">
-        <h1 class="home__title"> Hello, <br> I'm Publisher</h1>
-        <h2 class="home__description">퍼블리싱에 자부심을 가지고 노력을 다하는 웹퍼블리셔 송경아 입니다.</h2>
-        <button class="home__contact">Contact Me</button>
+        <div class="home__container">
+            <img src="img/nav_img.jpg" alt="">
+            <h1 class="home__title"> Hello, <br> I'm Publisher</h1>
+            <h2 class="home__description">퍼블리싱에 자부심을 가지고 노력을 다하는 웹퍼블리셔 송경아 입니다.</h2>
+            <button class="home__contact">Contact Me</button>
+        </div>
     </section>
     <!--home -->
 
@@ -231,16 +233,16 @@
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn active">All<span class="category__Count">8</span></button>
-            <button class="category__btn">Site<span class="category__Count">4</span></button>
-            <button class="category__btn">Design<span class="category__Count">2</span></button>
+            <button class="category__btn active" data-filter="*" cla>All<span class="category__Count">8</span></button>
+            <button class="category__btn" data-filter="Site">Site<span class="category__Count">4</span></button>
+            <button class="category__btn" data-filter="Design">Design<span class="category__Count">2</span></button>
 
 
         </div>
 
         <div class="work__projects">
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank" data-type="Site"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명</span>
@@ -250,8 +252,8 @@
 
 
 
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank" data-type="Site"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명</span>
@@ -259,8 +261,8 @@
 
             </a>
 
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank" data-type="Site"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명</span>
@@ -268,8 +270,8 @@
 
             </a>
 
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank" data-type="Site"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명</span>
@@ -277,8 +279,8 @@
 
             </a>
 
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank" data-type="Site"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명</span>
@@ -286,8 +288,8 @@
 
             </a>
 
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank " data-type="Design"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명</span>
@@ -295,8 +297,8 @@
 
             </a>
 
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank" data-type="Design"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명</span>
@@ -304,8 +306,8 @@
 
             </a>
 
-            <a href="" class="project" target="blank"><img src="projects/macbook-200521-195335.webp" class="project_img"
-                    alt="">
+            <a href="" class="project" target="blank" data-type="Design"><img src="projects/macbook-200521-195335.webp"
+                    class="project_img" alt="">
                 <div class="project__description">
                     <h3>Site</h3>
                     <span>설명설명설명설명설명설명설명설명설명</span>
@@ -346,6 +348,10 @@
     </section>
     <!--contact -->
 
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
 
 </body>
