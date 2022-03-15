@@ -136,14 +136,16 @@ p {
     background-color: #34ccba;
     border-radius: 5px;
 }
+
 .navbar__toggle-btn {
     position: absolute;
-    right: 32px;
-    
+    top: 17px;
+    right: 15px;
     font-size: 24px;
     color: #fff;
     display: none;
 }
+
 /*home*/
 #home {
     background: url(../img/main.png) center/cover no-repeat;
@@ -251,18 +253,18 @@ p {
 /*skills*/
 #skills {
     background-color: #8FE3D9;
-    
+
 }
 
 .section__container h2 {
     margin-bottom: 20px;
- 
+
 
 }
 
 .section__container p {
     font-size: 1rem;
- 
+
 }
 
 .skillset {
@@ -420,36 +422,67 @@ p {
 /*contact*/
 #contact {
     background-color: #8FE3D9;
-  
-   
-    
+
+
+
 }
-.contact__tilte,.contact__email,.contact__right {
+
+.contact__tilte,
+.contact__email,
+.contact__right {
     color: #fff;
 }
+
 .contact__tilte {
     margin: 32px 0;
 }
+
 .contact__links {
     font-size: var(--font-large);
     margin: 24px 0;
 }
+
 .contact__links i:hover {
     transform: scale(1.1);
     color: #34ccba;
     transition: all 300ms ease;
 }
+
 .contact__right {
     margin-top: 15px;
 }
 
 /*반응형*/
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
     .navbar__toggle-btn {
         display: block;
     }
+
     #navbar {
         flex-direction: column;
+        align-items: flex-start;
     }
+
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 50px;
+    }
+    .skillset {
+        flex-direction: column;
+    }
+    .project {
+        flex-grow: 1;
+    }
+
 }
