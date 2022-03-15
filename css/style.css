@@ -87,9 +87,11 @@ p {
 
 /*navbar*/
 #navbar {
+    position: fixed;
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    background-color: #8FE3D9;
+    background-color: transparent;
     align-items: center;
     color: #fff;
     padding: 5px 15px;
@@ -101,7 +103,10 @@ p {
     margin-right: 15px;
 
 }
-
+#navbar.navbar--dark {
+    background-color: #8FE3D9;
+    transition: all 300ms ease-in-out;
+}
 .navbar__logo {
     font-size: var(--font-regular);
     display: flex;
@@ -150,6 +155,7 @@ p {
 #home {
     background: url(../img/main.png) center/cover no-repeat;
     padding: 150px 0;
+    padding-top: 150px;
     text-align: center;
 
 }
