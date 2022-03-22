@@ -400,7 +400,7 @@ p {
     width: 280px;
     height: 250px;
     margin: 2px;
-    background-color: #eeeeee;
+    border: 1px solid #eee;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,8 +418,14 @@ p {
 .project_img {
     max-width: 100%;
     max-height: 100%;
+    object-fit: scale-down;
+
+
 
 }
+
+
+
 
 .project__description {
     display: flex;
