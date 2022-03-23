@@ -92,3 +92,15 @@ function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
+
+/* 모달 */
+
+function fnModal() {
+  var bgDiv = document.getElementById("bgDiv_Modal");
+  bgDiv.style.display = "block";
+}
+
+function fnClose() {
+  var bgDiv = document.getElementById("bgDiv_Modal");
+  bgDiv.style.display = "none";
+}
