@@ -625,6 +625,10 @@ p {
 
     }
 
-
+    .contact__email{ 
+      
+        font-size: 1.5rem;
+    }
+    
 
 }
