@@ -104,3 +104,5 @@ function fnClose() {
   var bgDiv = document.getElementById("bgDiv_Modal");
   bgDiv.style.display = "none";
 }
+
+AOS.init();

@@ -8,8 +8,9 @@
     <title>Kyung Ah's Portfolio</title>
     <meta name="description" content="Portfolio">
     <meta name="author" content="Kyung Ah">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -18,8 +19,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js" defer></script>
+
 
 
 </head>
@@ -52,7 +54,9 @@
     <section id="home">
         <div class="home__container">
             <img src="img/nav_img.jpg" alt="">
-            <h1 class="home__title"> Hello, <br> I'm Publisher</h1>
+            <h1 class="home__title" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> Hello,
+                <br>
+                I'm Publisher</h1>
 
             <button class="home__contact">Contact Me</button>
         </div>
@@ -60,8 +64,8 @@
     <!--home -->
 
     <section id="about" class="section section__container">
-        <h1>About Me</h1>
-        <p>웹 컨텐츠를 구현하기 위해
+        <h1 data-aos="fade-right" data-aos-once:false>About Me</h1>
+        <p data-aos="fade-right" data-aos-once:false data-aos-duration="3000">웹 컨텐츠를 구현하기 위해
             필요한 , 다양한 도전, 스킬, 트렌드에 관심이 많아 <br> 빠르게 변하는 웹 프로그램을 사용자 입장에서 생각하며,
             더 좋은 방향으로 갈 수 있는 길을 고민합니다. <br>
             아직 화려한 스킬이나 완벽한 역량을 갖추지 않았지만
@@ -147,7 +151,7 @@
 
     <section id="skills" class="section">
         <div class="section__container">
-            <h1>Skills</h1>
+            <h1 data-aos="fade-right" data-aos-once:false>Skills</h1>
             <h2>Skills & Attributes</h2>
             <p>새로운 경험을 맞이하는 것에 흥미가 있고 , <br> 팀과의 소통을 중요시하여 프로젝트를 이끌어 나갈 수
                 있습니다. 시간과 약속을 엄격하게 준수하며 , <br> 계획적으로 일을 해 나갈 수 있습니다.
@@ -229,7 +233,7 @@
     <!--skills -->
 
     <section id="work" class="section">
-        <h1>My work</h1>
+        <h1 data-aos="fade-right" data-aos-once:false>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
             <button class="category__btn active" data-filter="*" cla>All<span class="category__Count">6</span></button>
@@ -251,8 +255,8 @@
 
 
 
-            <a href="" taget="blank" class="project" target="blank" data-type="Site"><img src="projects/dang_main.jpg"
-                    class="project_img" alt="">
+            <a href="https://gyxii.github.io/" taget="blank" class="project" target="blank" data-type="Site"><img
+                    src="projects/dang_main.jpg" class="project_img" alt="">
                 <div class="project__description">
                     <h3>당근마켓</h3>
                     <span>기업사이트 당근마켓을 벤치마킹하여 제작한 웹사이트입니다.</span>
