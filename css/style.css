@@ -444,7 +444,9 @@ p {
 
 
 
-
+.project__description a {
+  
+}
 .project__description {
     display: flex;
     flex-direction: column;
