@@ -109,7 +109,7 @@ p {
 }
 
 #navbar.navbar--dark {
-    background-color:lightskyblue ;
+    background-color:thistle ;
     transition: all 300ms ease-in-out;
 }
 
@@ -143,7 +143,7 @@ p {
 
 
 .navbar__menu__item:hover {
-    background-color: #34ccba;
+    background-color: thistle;
 
     border-radius: 5px;
 }
@@ -170,7 +170,7 @@ p {
 #home img {
     width: 250px;
     border-radius: 50%;
-    border: 1px solid #34ccba;
+    border: 1px solid thistle;
 
 
 }
@@ -185,13 +185,13 @@ p {
     font-weight: bold;
     margin: 24px;
     padding: 8px 12px;
-    border: 1px solid #34ccba;
+    border:1px solid #000;
     border-radius: 4px;
 
 }
 
 .home__contact:hover {
-    background-color: #34ccba;
+    background-color: thistle;
     transition: all 300ms ease;
 }
 
@@ -226,7 +226,7 @@ p {
     font-size: 70px;
     line-height: 170px;
     margin: auto;
-    border: 1px solid #34ccba;
+    border: 1px solid thistle;
     border-radius: 50%;
     margin-bottom: 20px;
 
@@ -270,7 +270,7 @@ p {
 
 /*skills*/
 #skills {
-    background-color: #8FE3D9;
+    background-color: thistle;
 
 }
 
@@ -468,7 +468,7 @@ p {
 
 /*contact*/
 #contact {
-    background-color: #8FE3D9;
+    background-color: thistle;
 
 
 
@@ -508,7 +508,7 @@ p {
     height: 50px;
     font-size: 35px;
     color: #fff;
-    background-color: #34ccba;
+    background-color: thistle;
     border-radius: 50%;
     opacity: 0;
     transition: all 300ms ease-in;
